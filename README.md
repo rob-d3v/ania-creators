@@ -56,7 +56,7 @@ Ania Creators is a powerful desktop application that transforms static images in
 
 ### Installation
 
-1. Download the latest release from the [Releases](https://github.com/robshouse/ania-creators/releases) page
+1. Download the latest release from the [Releases](https://github.com/rob-d3v/ania-creators/releases) page
 2. Extract the archive to your preferred location
 3. Run `AniaCreators.exe` (Windows) or `./ania-creators` (Linux)
 
@@ -109,10 +109,10 @@ Ania Creators is proprietary software. See [LICENSE](LICENSE) for details.
 
 ## Support
 
-- **Bug Reports**: [GitHub Issues](https://github.com/robshouse/ania-creators/issues)
-- **Feature Requests**: [GitHub Discussions](https://github.com/robshouse/ania-creators/discussions)
+- **Bug Reports**: [GitHub Issues](https://github.com/rob-d3v/ania-creators/issues)
+- **Feature Requests**: [GitHub Discussions](https://github.com/rob-d3v/ania-creators/discussions)
 - **Commercial Support**: contact@ania-creators.com
 
 ---
 
-Made with love by [robd3v](https://linkedin.com/in/robd3v)
+by [;)](https://linkedin.com/in/robseng)
