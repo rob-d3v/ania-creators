@@ -1,118 +1,153 @@
 # Ania Creators
 
-**Professional Avatar Animation Platform for Modern Content Creators**
+**Desktop Application for Frame-Based Avatar Creation and Publishing**
 
-Ania Creators is a powerful desktop application that transforms static images into dynamic, voice-responsive avatars. Whether you're streaming, creating video content, building chatbots, or developing games, Ania provides the tools you need to bring your digital persona to life.
+Ania Creators is a desktop application for Windows and Linux that lets you build animated `.ania` avatars from image sequences, test them live, and publish them to the Ania Models marketplace. Designed for streamers, content creators, developers, and anyone building an AI-powered assistant.
 
-## What is an .ania File?
+---
 
-`.ania` files are encrypted avatar packages that contain all the necessary data to animate a digital avatar with lip-sync capabilities. These files are portable, secure, and can be used across different Ania players and integrations.
+## Give Your AI a Face
 
-### File Structure
-- Compressed frame sequences for idle and talking states
+Every AI model can have a visible, animated presence. Ania Creators is where that face is built.
+
+Create a character that speaks every AI response, reacts to every input, and gives your assistant a personality you can see. Export the avatar as a `.ania` file, load it in Ania Player, connect to your AI model via n8n, and the full pipeline is live — voice in, animated response out.
+
+> Don't want to build it yourself? Browse creator profiles on [aniamodels.shop](https://aniamodels.shop) and commission a creator to build the avatar for you.
+
+---
+
+## How the Avatar System Works
+
+Ania avatars operate on a two-state, audio-driven frame system:
+
+- **Idle state** — A randomized idle frame sequence plays while no audio is detected.
+- **Talk state** — When the configured audio input detects speech, a random talk frame triggers and a talk sequence begins. When speech stops, the avatar transitions back to an idle sequence.
+
+This creates natural, reactive avatar behavior with no real-time rendering overhead, no video pipeline, and no complex rigging.
+
+---
+
+## What is an `.ania` File?
+
+`.ania` is a portable, encrypted avatar format that packages all animation data needed to animate a digital avatar:
+
+- Idle and talk frame sequences
 - Animation timing and transition configurations
-- Metadata including creator info and licensing
-- Encrypted with password protection (optional)
+- Creator metadata and licensing information
+- Optional password protection
 
-## Key Features
+`.ania` files are compatible with the full Ania ecosystem: desktop player, web player, browser extension, and n8n automation integrations.
 
-- **Real-time Voice Sync**: Precise lip movement mapping that responds to your voice in real-time
-- **Cross-platform**: Works on Windows, Linux, and WebPlayer environments
-- **Custom Avatar Import**: Use your own artwork or images as avatars
-- **Integrated Marketplace**: Browse, buy, and sell avatar creations
-- **Multiple Output Options**: Chroma key support, transparent backgrounds, OBS integration
-- **TTS Integration**: Text-to-speech support for automated avatar responses
-- **n8n Integration**: Connect with n8n workflows for chatbot automation
+---
+
+## Features
+
+### Creation & Animation
+- **Visual Frame Studio** — Organize idle and talk frame sequences with full control over order and timing
+- **Adjustable Transitions** — Fine-tune timing between idle and talk states
+- **Save & Resume** — Save your creation progress and pick up exactly where you left off
+
+### Testing
+- **Live Microphone Test** — Speak and see the avatar react in real-time inside the app
+- **TTS Test** — Enter text and preview Text-to-Speech output synced to the avatar animation
+- **GIF Export** — Generate animated GIFs directly from your avatar sequences
+
+### Output & Publishing
+- **Export as `.ania`** — Portable, encrypted avatar format ready for any Ania player
+- **Password Protection** — Optionally lock your `.ania` export
+- **Chroma Key Preview** — See how your avatar looks with a transparent background before publishing
+- **Marketplace Integration** — Publish directly to [aniamodels.shop](https://aniamodels.shop) for free distribution or sale
+
+### General
+- **194 Languages** — Full interface localization
+- **Cross-Platform** — Windows 10/11 and Linux (Ubuntu 20.04+)
+
+---
 
 ## Use Cases
 
-### Streaming
-- Live avatar reactions during streams
-- VTuber-style presentations
-- Interactive chat integration
+### Streaming & VTubing
+Live reactive avatar for Twitch, YouTube, or any streaming platform. Works with OBS via chroma key.
 
-### Video Content
-- Animated tutorials and explainers
-- YouTube/TikTok content creation
-- Educational videos with avatar hosts
+### Video Production
+Animated avatar host for tutorials, explainers, YouTube, TikTok, or educational content.
 
-### Chatbots & AI
-- n8n workflow integration
-- Customer service avatars
-- AI assistant visual representation
+### Chatbots & AI Assistants
+Create a visual face for your AI — connect TTS output to the avatar for automated responses via n8n or any automation pipeline.
 
-### Games
-- NPC dialogue systems
-- Character animations
-- Interactive storytelling
+### Marketplace Publishing
+Build avatars and sell them on [aniamodels.shop](https://aniamodels.shop). Manage your public creator profile, set free or paid access, and reach users worldwide.
+
+Skilled creators can also **accept commissions** — individuals and companies looking for a custom branded avatar can browse creator profiles and contact them directly to negotiate. You don't need to know how to create avatars to have one made for you.
+
+---
 
 ## Getting Started
 
 ### Requirements
-- Windows 10/11 or Linux (Ubuntu 20.04+)
-- Java 17 or higher
-- 4GB RAM minimum (8GB recommended)
-- OpenGL 3.3 compatible graphics
+
+| Component | Minimum |
+|-----------|---------|
+| **OS** | Windows 10/11 or Linux (Ubuntu 20.04+) |
+| **Java** | 17 or higher |
+| **RAM** | 4GB (8GB recommended) |
+| **Storage** | 500MB free |
 
 ### Installation
 
 1. Download the latest release from the [Releases](https://github.com/rob-d3v/ania-creators/releases) page
-2. Extract the archive to your preferred location
-3. Run `AniaCreators.exe` (Windows) or `./ania-creators` (Linux)
+2. **Windows** — Run the `.exe` or `.msi` installer
+3. **Linux** — Extract and run `./ania-creators`
 
 ### Quick Start
 
-1. **Create a New Avatar**
-   - Click "Create" in the navigation menu
-   - Upload your base image or select from templates
-   - Configure idle and talking frame sequences
+1. **Import frames** — Add your idle and talk images from your image library
+2. **Configure sequences** — Define frame order and timing for both states
+3. **Test live** — Use the microphone test to see the avatar react to your voice in real-time
+4. **Test TTS** — Type text and preview automated speech synced to the avatar
+5. **Export or publish** — Save as `.ania` or push directly to the marketplace
 
-2. **Configure Audio**
-   - Select your microphone input
-   - Adjust sensitivity thresholds
-   - Test lip-sync response
+---
 
-3. **Export Your Avatar**
-   - Save as `.ania` file for portability
-   - Set password protection if desired
-   - Share or use in other Ania players
+## Roadmap
 
-## Ania Players
+- **Android & macOS** — A next-generation mobile and desktop assistant app is in development. Designed to act as a super-intelligent virtual assistant, combining the full Ania ecosystem — avatar, voice, AI, and automation — into a single always-available companion.
 
-`.ania` files can be used with various players:
+---
 
-- **Ania Desktop Player**: Standalone player for Windows/Linux
-- **Ania WebPlayer**: Browser-based player for web integration
-- **Ania OBS Plugin**: Direct integration with OBS Studio
-- **n8n Ania Node**: Workflow automation integration
+## The Ania Ecosystem
 
-## Documentation
+| Application | Platform | Description |
+|-------------|----------|-------------|
+| **Ania Creators** *(this)* | Windows, Linux | Avatar creation studio |
+| **Ania Player** | Windows, Linux, ARM64 | Desktop avatar player |
+| **Ania WebPlayer** | React / Any browser | Web integration library for developers |
+| **Ania Browser Extension** | Chrome | Browser-native avatar player |
+| **Ania Models** | Web | Marketplace at [aniamodels.shop](https://aniamodels.shop) |
 
-- [User Guide](docs/user-guide.md)
-- [API Reference](docs/api-reference.md)
-- [n8n Integration](docs/n8n-integration.md)
-- [Creating Custom Avatars](docs/custom-avatars.md)
-
-## Community
-
-- [Discord Server](https://discord.gg/ania-creators)
-- [Forum](https://forum.ania-creators.com)
-- [YouTube Tutorials](https://youtube.com/@ania-creators)
-
-## Contributing
-
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+---
 
 ## License
 
 Ania Creators is proprietary software. See [LICENSE](LICENSE) for details.
 
-## Support
-
-- **Bug Reports**: [GitHub Issues](https://github.com/rob-d3v/ania-creators/issues)
-- **Feature Requests**: [GitHub Discussions](https://github.com/rob-d3v/ania-creators/discussions)
-- **Commercial Support**: contact@ania-creators.com
+- Free to use for personal and commercial purposes
+- Reverse engineering and decompilation prohibited
+- Redistribution of modified versions not permitted
+- Source code is not publicly available
 
 ---
 
-by [;)](https://linkedin.com/in/robseng)
+## Support
+
+- **Bug Reports & Feature Requests** — [GitHub Issues](https://github.com/rob-d3v/ania-creators/issues)
+- **General Support** — support@aniamodels.shop
+- **Marketplace** — [aniamodels.shop](https://aniamodels.shop)
+
+---
+
+For a complete overview of all five products in the Ania ecosystem, see [ECOSYSTEM.md](ECOSYSTEM.md).
+
+---
+
+Created by [robd3v](https://www.linkedin.com/in/robseng/)
