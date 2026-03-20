@@ -18,10 +18,11 @@ Create a character that speaks every AI response, reacts to every input, and giv
 
 ## How the Avatar System Works
 
-Ania avatars operate on a two-state, audio-driven frame system:
+Ania avatars operate on a three-state, audio-driven frame system:
 
 - **Idle state** — A randomized idle frame sequence plays while no audio is detected.
-- **Talk state** — When the configured audio input detects speech, a random talk frame triggers and a talk sequence begins. When speech stops, the avatar transitions back to an idle sequence.
+- **Talk state** — When the configured audio input detects speech, a random talk frame triggers and a talk sequence begins. When speech stops, the avatar transitions back to idle.
+- **Action state** — A named custom animation defined by the creator. Actions interrupt idle or talk instantly and play to completion. Each avatar can have unlimited actions.
 
 This creates natural, reactive avatar behavior with no real-time rendering overhead, no video pipeline, and no complex rigging.
 
@@ -32,6 +33,7 @@ This creates natural, reactive avatar behavior with no real-time rendering overh
 `.ania` is a portable, encrypted avatar format that packages all animation data needed to animate a digital avatar:
 
 - Idle and talk frame sequences
+- Custom action sequences with creator-defined names
 - Animation timing and transition configurations
 - Creator metadata and licensing information
 - Optional password protection
@@ -43,13 +45,15 @@ This creates natural, reactive avatar behavior with no real-time rendering overh
 ## Features
 
 ### Creation & Animation
-- **Visual Frame Studio** — Organize idle and talk frame sequences with full control over order and timing
+- **Visual Frame Studio** — Organize idle, talk, and action frame sequences with full control over order and timing
+- **Action Definition** — Define as many custom actions as you want at import time, each with a unique name
 - **Adjustable Transitions** — Fine-tune timing between idle and talk states
 - **Save & Resume** — Save your creation progress and pick up exactly where you left off
 
 ### Testing
 - **Live Microphone Test** — Speak and see the avatar react in real-time inside the app
 - **TTS Test** — Enter text and preview Text-to-Speech output synced to the avatar animation
+- **Action Test** — Trigger any defined action and preview it directly inside the app
 - **GIF Export** — Generate animated GIFs directly from your avatar sequences
 
 ### Output & Publishing
@@ -73,7 +77,7 @@ Live reactive avatar for Twitch, YouTube, or any streaming platform. Works with 
 Animated avatar host for tutorials, explainers, YouTube, TikTok, or educational content.
 
 ### Chatbots & AI Assistants
-Create a visual face for your AI — connect TTS output to the avatar for automated responses via n8n or any automation pipeline.
+Create a visual face for your AI — connect TTS output to the avatar for automated responses via n8n or any automation pipeline. Define actions that the AI can trigger in response to specific events.
 
 ### Marketplace Publishing
 Build avatars and sell them on [aniamodels.shop](https://aniamodels.shop). Manage your public creator profile, set free or paid access, and reach users worldwide.
@@ -101,11 +105,12 @@ Skilled creators can also **accept commissions** — individuals and companies l
 
 ### Quick Start
 
-1. **Import frames** — Add your idle and talk images from your image library
-2. **Configure sequences** — Define frame order and timing for both states
+1. **Import frames** — Add your idle, talk, and action images from your image library; define sequence type and name at import
+2. **Configure sequences** — Define frame order and timing for all states
 3. **Test live** — Use the microphone test to see the avatar react to your voice in real-time
-4. **Test TTS** — Type text and preview automated speech synced to the avatar
-5. **Export or publish** — Save as `.ania` or push directly to the marketplace
+4. **Test actions** — Trigger each action and preview it directly in the app
+5. **Test TTS** — Type text and preview automated speech synced to the avatar
+6. **Export or publish** — Save as `.ania` or push directly to the marketplace
 
 ---
 
