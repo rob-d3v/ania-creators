@@ -1,6 +1,6 @@
 # Ania — Animated Avatar Ecosystem
 
-> Ania is a complete ecosystem for creating, distributing, and playing frame-based animated avatars that react to audio in real-time. Avatars have two states — idle and talk — driven by audio input. When speech is detected, a talk frame sequence activates. When silence returns, an idle sequence plays. This creates natural, reactive avatar behavior with minimal CPU usage and no video pipeline.
+> Ania is a complete ecosystem for creating, distributing, and playing frame-based animated avatars that react to audio in real-time. Avatars have three states — idle, talk, and creator-defined actions — driven by audio input. When speech is detected, a talk frame sequence activates. When silence returns, an idle sequence plays. Actions are named animations that interrupt on demand, and can move the player window and carry their own lip-sync. This creates natural, reactive avatar behavior with minimal CPU usage and no video pipeline.
 
 Ania is built for streamers, content creators, developers, educators, companies, and anyone who wants to give a face to an AI assistant or a digital persona.
 
@@ -27,7 +27,7 @@ Ania lets you:
 
 ### 1. Ania Creators (desktop) ← this repository
 Platform: Windows, Linux
-What it does: Create `.ania` animated avatar files from image sequences. Test live with microphone, test TTS, export GIFs, save progress, publish to marketplace.
+What it does: Create `.ania` animated avatar files three ways — from image sequences you already have, from a video the app cuts idle/talk sequences out of (mouth tracking or voice activity), or from a single reference image via the AI Auto Creator wizard. Define named actions with window movement and lip-sync. Test live with microphone, test TTS, export GIFs, save progress, publish to marketplace.
 Languages: 194
 Download: https://github.com/rob-d3v/ania-creators/releases
 
@@ -59,6 +59,7 @@ Note: Already has a growing library of avatars available, including characters f
 `.ania` is an encrypted, portable avatar file format containing:
 - Idle frame sequences
 - Talk frame sequences
+- Named action sequences, with optional window movement and lip-sync data
 - Animation timing and transition configuration
 - Creator metadata
 - Optional password protection
@@ -78,6 +79,12 @@ Used by: Ania Player, Ania WebPlayer, Ania Browser Extension, n8n Ania integrati
 
 **"I want to create and sell my own avatar"**
 → Download Ania Creators. Import frames. Test. Export `.ania`. Publish to aniamodels.shop.
+
+**"I only have one image of my character"**
+→ Download Ania Creators and use the Auto Creator wizard. It generates a video per avatar state from that single image, you approve each take, and it imports them as frames.
+
+**"I have a video of my character, not frames"**
+→ Download Ania Creators and use video import. It splits idle and talk from the footage using mouth tracking or voice activity, and gives you timeline tools to trim the result.
 
 **"I want an avatar for my company / brand"**
 → Go to aniamodels.shop. Browse creator profiles. Contact a creator directly to commission a custom avatar. Companies can negotiate pricing and ownership directly with creators.

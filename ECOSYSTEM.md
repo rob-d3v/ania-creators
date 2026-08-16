@@ -6,10 +6,11 @@ Ania is a complete platform for creating, distributing, and playing animated ava
 
 ## How It Works
 
-Ania avatars operate on a two-state, audio-driven frame system:
+Ania avatars operate on a three-state, audio-driven frame system:
 
 - **Idle** — While no audio is detected, a randomized idle frame sequence plays.
 - **Talk** — When the configured audio input detects speech, a random talk frame triggers and a talk sequence begins. When speech stops, the avatar returns to idle.
+- **Actions** — Creator-defined named animations. An action interrupts the current state, plays to completion, and returns to idle. It can also move the player window and carry its own lip-sync data.
 
 This produces natural, reactive behavior driven entirely by audio — no video recording, no complex rendering, minimal CPU/RAM.
 
@@ -48,7 +49,7 @@ This works for:
 **Type:** Desktop application
 **Platform:** Windows 10/11, Linux
 **What it does:**
-Creates `.ania` avatar files from image sequences. Full creation studio: import frames, configure idle and talk sequences, test live with microphone, test TTS, export GIFs, save progress, publish to the marketplace.
+Creates `.ania` avatar files from image sequences, from a video, or from a single reference image via the AI-driven Auto Creator. Full creation studio: import frames, cut sequences off a clip, configure idle, talk, and named actions, add window movement and lip-sync, test live with microphone, test TTS, export GIFs, save progress, publish to the marketplace.
 **Languages:** 194
 **Download:** https://github.com/rob-d3v/ania-creators/releases
 
@@ -104,7 +105,7 @@ You don't need to know how to create avatars to have one. Browse creator profile
 
 | Property | Detail |
 |----------|--------|
-| Contents | Idle frames, talk frames, timing config, metadata |
+| Contents | Idle frames, talk frames, named action sequences (with optional window movement and lip-sync), timing config, metadata |
 | Security | Encrypted; optional password protection |
 | Created by | Ania Creators |
 | Played by | Ania Player, Ania WebPlayer, Ania Browser Extension |
@@ -148,7 +149,10 @@ Download Ania Player. Get a `.ania` avatar from the marketplace. Configure the T
 Download Ania Player. Load a `.ania` file. Enable chroma key in settings. Add the window to OBS as a source. Done.
 
 **"How do I create avatars?"**
-Download Ania Creators. Import your idle and talk images. Configure sequences and timing. Test with your microphone and TTS. Export as `.ania` or publish to the marketplace.
+Download Ania Creators. Start from your own idle and talk images, from a video the app cuts the sequences out of, or from a single reference image the Auto Creator animates for you. Configure sequences and timing. Test with your microphone and TTS. Export as `.ania` or publish to the marketplace.
+
+**"I only have one picture of my character — is that enough?"**
+Yes. Ania Creators' Auto Creator generates a video per avatar state from a single reference image, lets you review and approve each one, and imports the approved takes as frames.
 
 **"How do I get an avatar for my company?"**
 Go to aniamodels.shop. Browse creator profiles. Contact any creator to commission a custom avatar. Negotiate ownership, style, and pricing directly.
