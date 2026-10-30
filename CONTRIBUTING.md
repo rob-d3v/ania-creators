@@ -39,13 +39,13 @@ Thank you for your interest in Ania Creators!
 
 **Do not** open public issues for security vulnerabilities.
 
-Email: support@aniamodels.shop — See [SECURITY.md](SECURITY.md) for details.
+Email: support@diatech.solutions — See [SECURITY.md](SECURITY.md) for details.
 
 ---
 
 ## Other Ways to Contribute
 
-- **Create and publish avatars** on [aniamodels.shop](https://aniamodels.shop) — growing the library benefits the entire community
+- **Create and publish avatars** on [avatar.diatech.solutions](https://avatar.diatech.solutions) — growing the library benefits the entire community
 - **Leave feedback on the marketplace** — ratings and reviews help creators improve
 - **Share the project** with people who could use it
 

@@ -12,7 +12,7 @@ Every AI model can have a visible, animated presence. Ania Creators is where tha
 
 Create a character that speaks every AI response, reacts to every input, and gives your assistant a personality you can see. Export the avatar as a `.ania` file, load it in Ania Player, connect to your AI model via n8n, and the full pipeline is live — voice in, animated response out.
 
-> Don't want to build it yourself? Browse creator profiles on [aniamodels.shop](https://aniamodels.shop) and commission a creator to build the avatar for you.
+> Don't want to build it yourself? Browse creator profiles on [avatar.diatech.solutions](https://avatar.diatech.solutions) and commission a creator to build the avatar for you.
 
 ---
 
@@ -75,7 +75,7 @@ This creates natural, reactive avatar behavior with no real-time rendering overh
 - **Export as `.ania`** — Portable, encrypted avatar format ready for any Ania player
 - **Password Protection** — Optionally lock your `.ania` export
 - **Chroma Key Preview** — See how your avatar looks with a transparent background before publishing
-- **Marketplace Integration** — Publish directly to [aniamodels.shop](https://aniamodels.shop) for free distribution or sale, with uploads sent straight to storage and resumed after a network drop
+- **Marketplace Integration** — Publish directly to [avatar.diatech.solutions](https://avatar.diatech.solutions) for free distribution or sale, with uploads sent straight to storage and resumed after a network drop
 
 ### General
 - **194 Languages** — Full interface localization
@@ -95,7 +95,7 @@ Animated avatar host for tutorials, explainers, YouTube, TikTok, or educational 
 Create a visual face for your AI — connect TTS output to the avatar for automated responses via n8n or any automation pipeline. Define actions that the AI can trigger in response to specific events.
 
 ### Marketplace Publishing
-Build avatars and sell them on [aniamodels.shop](https://aniamodels.shop). Manage your public creator profile, set free or paid access, and reach users worldwide.
+Build avatars and sell them on [avatar.diatech.solutions](https://avatar.diatech.solutions). Manage your public creator profile, set free or paid access, and reach users worldwide.
 
 Skilled creators can also **accept commissions** — individuals and companies looking for a custom branded avatar can browse creator profiles and contact them directly to negotiate. You don't need to know how to create avatars to have one made for you.
 
@@ -143,7 +143,7 @@ Skilled creators can also **accept commissions** — individuals and companies l
 | **Ania Player** | Windows, Linux, ARM64 | Desktop avatar player |
 | **Ania WebPlayer** | React / Any browser | Web integration library for developers |
 | **Ania Browser Extension** | Chrome | Browser-native avatar player |
-| **Ania Models** | Web | Marketplace at [aniamodels.shop](https://aniamodels.shop) |
+| **Ania Models** | Web | Marketplace at [avatar.diatech.solutions](https://avatar.diatech.solutions) |
 
 ---
 
@@ -161,8 +161,8 @@ Ania Creators is proprietary software. See [LICENSE](LICENSE) for details.
 ## Support
 
 - **Bug Reports & Feature Requests** — [GitHub Issues](https://github.com/rob-d3v/ania-creators/issues)
-- **General Support** — support@aniamodels.shop
-- **Marketplace** — [aniamodels.shop](https://aniamodels.shop)
+- **General Support** — support@diatech.solutions
+- **Marketplace** — [avatar.diatech.solutions](https://avatar.diatech.solutions)
 
 ---
 

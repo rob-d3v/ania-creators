@@ -6,7 +6,7 @@ If you discover a security vulnerability in Ania Creators, please report it resp
 
 **Do not** create a public GitHub issue for security vulnerabilities.
 
-Email: support@aniamodels.shop
+Email: support@diatech.solutions
 
 Include:
 - Description of the vulnerability

@@ -49,7 +49,7 @@ An encrypted, portable avatar package containing all animation data. Works acros
 Yes. Optional password protection is available when exporting a `.ania` file.
 
 ### How do I publish to the marketplace?
-From within Ania Creators, use the integrated marketplace panel to submit your avatar to [aniamodels.shop](https://aniamodels.shop). You set whether it's free or paid.
+From within Ania Creators, use the integrated marketplace panel to submit your avatar to [avatar.diatech.solutions](https://avatar.diatech.solutions). You set whether it's free or paid.
 
 ### Can I sell my avatars?
 Yes. Define your price through your creator profile. Sales are managed via the marketplace.
@@ -84,7 +84,7 @@ The chroma key preview lets you verify how your avatar looks with a transparent 
 Open an issue on [GitHub](https://github.com/rob-d3v/ania-creators/issues).
 
 ### Where do I get help?
-Email: support@aniamodels.shop
+Email: support@diatech.solutions
 
 ### Where is the marketplace?
-[aniamodels.shop](https://aniamodels.shop)
+[avatar.diatech.solutions](https://avatar.diatech.solutions)
